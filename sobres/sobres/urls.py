@@ -15,6 +15,9 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+from isobres.views import *
+
 urlpatterns = [
+    url(r'^$', homepage),    #linia en blanc crida a la funcio
     url(r'^admin/', include(admin.site.urls)),
 ]
